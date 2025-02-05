@@ -1,7 +1,5 @@
-Here's a simple README file based on the provided structure:
-
 ```markdown
-# Project Name
+# restaurant-App
 
 This is a Fullstack PHP project for managing a restaurant's website and backend system, including a dashboard for admins and a customer-facing website with menu, cart, checkout, and reservations.
 
@@ -56,18 +54,4 @@ This is a Fullstack PHP project for managing a restaurant's website and backend 
 - **Order Tracking**: Customers can track the status of their orders.
 - **Payments**: Integrated with Stripe for processing payments.
 - **Inventory Management**: Admins can manage and track the inventory.
-  
-
 ```
-
-# Create directories
-mkdir -p public/admin public/customer public/assets
-mkdir -p app/config app/includes app/classes app/lib app/scripts
-mkdir -p views/admin views/customer views/errors
-
-# Create placeholder files
-touch public/admin/index.php public/customer/index.php public/assets/index.php
-touch app/config/database.php app/includes/auth.php app/classes/User.php app/lib/Stripe.php app/scripts/schema.sql
-touch views/admin/index.php views/customer/index.php views/errors/403.php
-
-

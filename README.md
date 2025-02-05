@@ -1,4 +1,3 @@
-```markdown
 # restaurant-App
 
 This is a Fullstack PHP project for managing a restaurant's website and backend system, including a dashboard for admins and a customer-facing website with menu, cart, checkout, and reservations.
@@ -38,4 +37,3 @@ This is a Fullstack PHP project for managing a restaurant's website and backend 
 - **Order Tracking**: Customers can track the status of their orders.
 - **Payments**: Integrated with Stripe for processing payments.
 - **Inventory Management**: Admins can manage and track the inventory.
-```

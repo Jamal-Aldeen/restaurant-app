@@ -24,27 +24,11 @@ This is a Fullstack PHP project for managing a restaurant's website and backend 
 │   ├── errors/              # 403, 404, 500 error pages
 │
 ├── README.md                # Project documentation
+
 ```
 
 ## Installation
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
-   ```
-
-2. Install dependencies using Composer:
-   ```bash
-   composer install
-   ```
-
-3. Set up the database:
-   - Configure the `.env` file with your database credentials.
-   - Run the SQL schema and seed data scripts located in `app/scripts/`.
-
-4. Set up your web server:
-   - Make sure your `.htaccess` file is configured for clean URLs and security.
 
 ## Features
 

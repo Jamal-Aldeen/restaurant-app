@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Egyptian Bites</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/assets/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Egyptian Bites</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#booking">Book a Table</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="display-4">Welcome to <span class="text-warning">Egyptian Bites</span></h1>
+        <p class="lead">Authentic Egyptian flavors straight from the heart of Cairo!</p>
+        <div>
+            <a href="#menu" class="btn btn-outline-light btn-lg">Our Menu</a>
+            <a href="#booking" class="btn btn-warning btn-lg">Book a Table</a>
+        </div>
+    </div>
+</div>
+
+<!-- About Us Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Side: Text Content -->
+            <div class="col-md-6 about-content">
+                <h2 class="about-title">Discover Our Story</h2>
+                <p class="about-text">
+                    Welcome to <strong>Egyptian Bites</strong>, where tradition meets taste. We take pride in serving 
+                    authentic Egyptian cuisine, crafted with love and rich flavors. From the bustling streets of Cairo 
+                    to your table, our dishes bring you the true essence of Egyptian hospitality.
+                </p>
+                <p class="about-text">
+                    Our chefs use time-honored recipes, fresh ingredients, and passion to deliver an unforgettable 
+                    dining experience. Whether you're here for our famous Koshari, delicious Molokhia, or sweet Basbousa, 
+                    we promise a taste of Egypt in every bite.
+                </p>
+                <a href="#menu" class="btn btn-learn mt-3">Explore Our Menu</a>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="col-md-6 about-image">
+                <img src="assets/images/khofo-Ground_View01.jpg" alt="Authentic Egyptian Food">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Today's Menu Section -->
+<section id="menu" class="menu-section">
+    <div class="container">
+        <h2>Today's Menu</h2>
+        <p class="text-center text-muted">Experience the best Egyptian dishes, made with love.</p>
+
+        <div class="row">
+            <!-- Menu Item 1: Koshari -->
+            <div class="col-md-3 menu-item">
+                <img src="assets/images/Egyptian-Koshari-Featured.jpg" alt="Koshari">
+                <h5>Koshari</h5>
+                <p class="price">$5.00</p>
+                <p>A delicious mix of lentils, rice, pasta, and chickpeas topped with crispy onions and a rich tomato sauce.</p>
+            </div>
+            <!-- Menu Item 2: Mahshi -->
+            <div class="col-md-3 menu-item">
+                <img src="assets/images/mahshi-plato.jpg" alt="Mahshi">
+                <h5>Mahshi (Stuffed Vegetables)</h5>
+                <p class="price">$7.50</p>
+                <p>Stuffed zucchini, peppers, and vine leaves with a flavorful mix of rice, herbs, and spices.</p>
+            </div>
+            <!-- Menu Item 3: Molokhia -->
+            <div class="col-md-3 menu-item">
+                <img src="assets/images/Molokhia-17.webp" alt="Molokhia">
+                <h5>Molokhia</h5>
+                <p class="price">$6.99</p>
+                <p>Traditional green soup made from jute leaves, served with rice or bread and chicken or rabbit.</p>
+            </div>
+            <!-- Menu Item 4: Feteer Meshaltet -->
+            <div class="col-md-3 menu-item">
+                <img src="assets/images/th.jpg" alt="Feteer Meshaltet">
+                <h5>Feteer Meshaltet</h5>
+                <p class="price">$8.50</p>
+                <p>Flaky layered pastry served with honey, sugar, or stuffed with cheese and meat.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Book Your Table -->
+<div id="booking" class="container my-5">
+    <h2 class="booking-heading">Book Your Table with Us</h2>
+    
+    <div class="row align-items-center">
+        <!-- Left Side Image -->
+        <div class="col-md-6 booking-image">
+            <img src="assets/images/image.png" alt="Elegant Egyptian Dining">
+        </div>
+
+        <!-- Right Side Form -->
+        <div class="col-md-6">
+            <div class="booking-section">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="tel" class="form-control" placeholder="Your Phone">
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="time" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" placeholder="# of People" min="1">
+                        </div>
+
+                        <div class="col-12">
+                            <textarea class="form-control" rows="4" placeholder="Special Requests"></textarea>
+                        </div>
+
+                        <div class="col-12 text-center mt-3">
+                            <button type="submit" class="btn btn-book w-100">Book a Table</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- fd -->
+<section id="testimonials" class="testimonial-section">
+    <div class="container">
+        <h2 class="testimonial-title">What Our Customers Say</h2>
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active">
+                    <div class="testimonial-box">
+                        <p class="testimonial-text">"The best Egyptian food I've ever had! Authentic flavors and a great atmosphere."</p>
+                        <img src="https://ui-avatars.com/api/?name=Ahmed+Youssef&background=random" alt="Customer 1" class="testimonial-avatar">
+                        <p class="testimonial-author">Ahmed Youssef</p>
+                        <p class="testimonial-role">Food Blogger</p>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="carousel-item">
+                    <div class="testimonial-box">
+                        <p class="testimonial-text">"Absolutely loved the Koshari! Reminded me of my childhood in Egypt. Highly recommended!"</p>
+                        <img src="https://ui-avatars.com/api/?name=Sara+Khaled&background=random" alt="Customer 2" class="testimonial-avatar">
+                        <p class="testimonial-author">Sara Khaled</p>
+                        <p class="testimonial-role">Restaurant Critic</p>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="carousel-item">
+                    <div class="testimonial-box">
+                        <p class="testimonial-text">"Incredible service and delicious Molokhia! Will definitely come back!"</p>
+                        <img src="https://ui-avatars.com/api/?name=Mohamed+Fathy&background=random" alt="Customer 3" class="testimonial-avatar">
+                        <p class="testimonial-author">Mohamed Fathy</p>
+                        <p class="testimonial-role">Local Guide</p>
+                        <div class="testimonial-stars">★★★★★</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- conneect us -->
+ <!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-overlay"></div>
+    <div class="container contact-content">
+        <h2 class="contact-title">Get in Touch</h2>
+
+        <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-4 text-center">
+                <p class="contact-info"><i class="fas fa-map-marker-alt"></i> 123 Cairo Street, Egypt</p>
+                <p class="contact-info"><i class="fas fa-phone"></i> +20 100 200 3000</p>
+                <p class="contact-info"><i class="fas fa-envelope"></i> contact@egyptianbites.com</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-8">
+                <form class="contact-form">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn-send">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Optional: Google Map -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.123456789012!2d31.23571131511691!3d30.04441928186057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145846dd16b3e7cf%3A0x5d0d0a59a2f5c7f7!2sCairo%2C%20Egypt!5e0!3m2!1sen!2seg!4v1611177744575!5m2!1sen!2seg"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-md-4">
+                <h5>Egyptian Bites</h5>
+                <p>Experience authentic Egyptian flavors in an elegant setting. Our dishes bring tradition and taste together.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Cairo Street, Egypt</p>
+                <p><i class="fas fa-phone"></i> +20 100 200 3000</p>
+                <p><i class="fas fa-envelope"></i> contact@egyptianbites.com</p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-md-4">
+                <h5>Newsletter</h5>
+                <p>Stay updated with our latest menu items and events.</p>
+                <div class="newsletter d-flex">
+                    <input type="email" placeholder="Your Email">
+                    <button class="btn-subscribe ms-2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            &copy; 2025 Egyptian Bites. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

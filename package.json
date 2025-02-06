@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-app",
+  "version": "1.0.0",
+  "description": "This is a Fullstack PHP project for managing a restaurant's website and backend system, including a dashboard for admins and a customer-facing website with menu, cart, checkout, and reservations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamal-Aldeen/restaurant-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jamal-Aldeen/restaurant-app/issues"
+  },
+  "homepage": "https://github.com/Jamal-Aldeen/restaurant-app#readme"
+}

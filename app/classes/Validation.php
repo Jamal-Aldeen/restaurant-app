@@ -4,30 +4,24 @@ class Validation {
     
     private $errors = [];
 
-    public function validateFullName($full_name) {
-        if (empty($full_name)) {
-            $this->errors[] = "Full name is required.";
-        } elseif (!preg_match("/^[a-zA-Z\s]+$/", $full_name)) {
-            $this->errors[] = "Full name can only contain letters and spaces.";
+    public function checkEmptyFields($fields) {
+        foreach ($fields as $field => $value) {
+            if (empty($value)) {
+                $this->errors[] = ucfirst($field) . " is required.";
+            }
         }
     }
-    
 
     public function validateEmail($email) {
-        if (empty($email)) {
-            $this->errors[] = "Email is required.";
-        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $this->errors[] = "Invalid email format.";
         }
     }
 
     public function validatePassword($password, $confirm_password) {
-        if (empty($password)) {
-            $this->errors[] = "Password is required.";
-        } elseif (strlen($password) < 6) {
-            $this->errors[] = "Password must be at least 6 characters long.";
+        if (strlen($password) < 8 || !preg_match("/[A-Za-z]/", $password) || !preg_match("/\d/", $password)) {
+            $this->errors[] = "Password must be at least 8 characters long and contain at least one letter and one number.";
         }
-
         if ($password !== $confirm_password) {
             $this->errors[] = "Passwords do not match.";
         }
@@ -36,9 +30,7 @@ class Validation {
     public function validateProfilePic($profile_pic) {
         if (!empty($profile_pic['name'])) {
             $allowed_types = ['jpg', 'jpeg', 'png', 'gif'];
-            $imageFileType = strtolower(pathinfo($profile_pic['name'], PATHINFO_EXTENSION));
-
-            if (!in_array($imageFileType, $allowed_types)) {
+            if (!in_array(strtolower(pathinfo($profile_pic['name'], PATHINFO_EXTENSION)), $allowed_types)) {
                 $this->errors[] = "Only JPG, JPEG, PNG, and GIF files are allowed.";
             }
         }
